@@ -1,0 +1,10 @@
+{
+    "require": ["chai/register-assert"],
+    "timeout": 30000,
+    "reporter": "mochawesome",
+    "reporter-options": {
+      "reportDir": "reports",
+      "reportFilename": "TestReport"
+    }
+  }
+  

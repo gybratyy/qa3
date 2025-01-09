@@ -1,0 +1,332 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-09T14:08:51.187Z",
+    "end": "2025-01-09T14:09:04.588Z",
+    "duration": 13401,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "16795ed4-b9b8-4912-974a-867fc208dd22",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "089dd4a3-2379-4bab-84e7-2d8867498fa8",
+          "title": "Task 2: Action Class",
+          "fullFile": "C:\\Users\\gybraty\\Desktop\\code\\qa3\\tests\\action.js",
+          "file": "\\tests\\action.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Task 2: Action Class\"",
+              "fullTitle": "Task 2: Action Class \"before all\" hook in \"Task 2: Action Class\"",
+              "timedOut": false,
+              "duration": 4855,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await setupDriver();\nawait driver.get(\"https://demo.automationtesting.in/Static.html\");",
+              "err": {},
+              "uuid": "df77f91e-a9fb-4ed8-ac3a-66aece0dc174",
+              "parentUUID": "089dd4a3-2379-4bab-84e7-2d8867498fa8",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Task 2: Action Class\"",
+              "fullTitle": "Task 2: Action Class \"after all\" hook in \"Task 2: Action Class\"",
+              "timedOut": false,
+              "duration": 29,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await teardownDriver();",
+              "err": {},
+              "uuid": "ba42fb9e-de3c-41c9-86bd-a48b3972d980",
+              "parentUUID": "089dd4a3-2379-4bab-84e7-2d8867498fa8",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Perform Mouse Hover and Drag-and-Drop",
+              "fullTitle": "Task 2: Action Class Perform Mouse Hover and Drag-and-Drop",
+              "timedOut": false,
+              "duration": 274,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const actions = driver.actions({ bridge: true });\nconst source = await driver.findElement(By.id(\"angular\"));\nconst target = await driver.findElement(By.id(\"droparea\"));\nawait actions.dragAndDrop(source, target).perform();",
+              "err": {},
+              "uuid": "40977d35-e322-483c-a6ba-bb4ec7d36782",
+              "parentUUID": "089dd4a3-2379-4bab-84e7-2d8867498fa8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "40977d35-e322-483c-a6ba-bb4ec7d36782"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 274,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "386ab4ce-e6fb-47eb-9974-cddddb09bb72",
+          "title": "Task 3: Select Class",
+          "fullFile": "C:\\Users\\gybraty\\Desktop\\code\\qa3\\tests\\select.js",
+          "file": "\\tests\\select.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Task 3: Select Class\"",
+              "fullTitle": "Task 3: Select Class \"before all\" hook in \"Task 3: Select Class\"",
+              "timedOut": false,
+              "duration": 3479,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await setupDriver();\nawait driver.get(\"http://demo.automationtesting.in/Register.html\");",
+              "err": {},
+              "uuid": "bb9a4911-5fe8-46f6-b4e0-36de591c633b",
+              "parentUUID": "386ab4ce-e6fb-47eb-9974-cddddb09bb72",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Task 3: Select Class\"",
+              "fullTitle": "Task 3: Select Class \"after all\" hook in \"Task 3: Select Class\"",
+              "timedOut": false,
+              "duration": 30,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await teardownDriver();",
+              "err": {},
+              "uuid": "b78040fc-2278-4779-bc2e-2b7924e18c5c",
+              "parentUUID": "386ab4ce-e6fb-47eb-9974-cddddb09bb72",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Select Dropdown Option",
+              "fullTitle": "Task 3: Select Class Select Dropdown Option",
+              "timedOut": false,
+              "duration": 91,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const dropdown = await driver.findElement(By.id(\"Skills\"));\nconst options = await dropdown.findElements(By.tagName(\"option\"));\nfor (const option of options) {\n  const text = await option.getText();\n  if (text === \"APIs\") {\n    await option.click();\n    console.log(\"APIs selected!\");\n    break;\n  }\n}",
+              "err": {},
+              "uuid": "77ddec5c-1555-41b5-9377-804a6e0117cf",
+              "parentUUID": "386ab4ce-e6fb-47eb-9974-cddddb09bb72",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "77ddec5c-1555-41b5-9377-804a6e0117cf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 91,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "ae817cda-524a-4831-b8b6-e94fee4f281f",
+          "title": "Task 1: Wait Mechanisms",
+          "fullFile": "C:\\Users\\gybraty\\Desktop\\code\\qa3\\tests\\wait.js",
+          "file": "\\tests\\wait.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Task 1: Wait Mechanisms\"",
+              "fullTitle": "Task 1: Wait Mechanisms \"before all\" hook in \"Task 1: Wait Mechanisms\"",
+              "timedOut": false,
+              "duration": 4442,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await setupDriver();\nawait driver.get(\"http://demo.automationtesting.in/Register.html\");",
+              "err": {},
+              "uuid": "9dc63e34-618c-404b-b673-90c04f474683",
+              "parentUUID": "ae817cda-524a-4831-b8b6-e94fee4f281f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Task 1: Wait Mechanisms\"",
+              "fullTitle": "Task 1: Wait Mechanisms \"after all\" hook in \"Task 1: Wait Mechanisms\"",
+              "timedOut": false,
+              "duration": 62,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await teardownDriver();",
+              "err": {},
+              "uuid": "eae46952-ba41-4899-90f1-12d06122bc6b",
+              "parentUUID": "ae817cda-524a-4831-b8b6-e94fee4f281f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Implicit Wait",
+              "fullTitle": "Task 1: Wait Mechanisms Implicit Wait",
+              "timedOut": false,
+              "duration": 64,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.manage().setTimeouts({ implicit: 5000 });\nawait driver.findElement(By.css('[ng-model=\"FirstName\"]'));\nconst element = await driver.findElement(By.css('[ng-model=\"FirstName\"]'));\nawait element.sendKeys(\"Gibrat\");",
+              "err": {},
+              "uuid": "f396f776-4b37-4dd3-b21c-7802f6ca9e63",
+              "parentUUID": "ae817cda-524a-4831-b8b6-e94fee4f281f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Explicit Wait",
+              "fullTitle": "Task 1: Wait Mechanisms Explicit Wait",
+              "timedOut": false,
+              "duration": 55,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const explicitWait = driver.wait(until.elementLocated(By.css(\"input[placeholder='Last Name']\")), 10000);\nawait explicitWait;\n\nconst element = await driver.findElement(By.css(\"input[placeholder='Last Name']\"));\nawait element.sendKeys(\"Yerzhan\");",
+              "err": {},
+              "uuid": "1e6c076e-d158-49e0-816c-84877826054b",
+              "parentUUID": "ae817cda-524a-4831-b8b6-e94fee4f281f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Fluent Wait",
+              "fullTitle": "Task 1: Wait Mechanisms Fluent Wait",
+              "timedOut": false,
+              "duration": 14,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const fluentWait = async () => {\n  let conditionMet = false;\n  const start = Date.now();\n  while (!conditionMet && Date.now() - start < 10000) {\n    try {\n      const element = await driver.findElement(By.css(\"input[type='email']\"));\n      if (await element.isDisplayed()) {\n        conditionMet = true;\n        console.log(\"Element Address found!\");\n        element.sendKeys(\"gybraty@gmail.com\");\n      }\n      \n    } catch (err) {\n      // Ignore errors  \n    }\n  }\n  if (!conditionMet) throw new Error(\"Element not found!\");\n};\nawait fluentWait();",
+              "err": {},
+              "uuid": "b3349c44-32e1-4f61-ada3-00759d8941e0",
+              "parentUUID": "ae817cda-524a-4831-b8b6-e94fee4f281f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f396f776-4b37-4dd3-b21c-7802f6ca9e63",
+            "1e6c076e-d158-49e0-816c-84877826054b",
+            "b3349c44-32e1-4f61-ada3-00759d8941e0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 133,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 30000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "[object Object]": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
